@@ -1,0 +1,14 @@
+.cpn-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #a2aca6;
+    font-family: Inter;
+}
+
+@media screen and (min-width: 600px) {
+    .cpn-title {
+        font-size: 5.8rem;
+        font-weight: 700;
+        color: white;
+    }
+}
