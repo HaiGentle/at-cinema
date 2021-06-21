@@ -3,7 +3,7 @@ import "./styles.scss";
 import className from "classnames";
 
 export default function MovieImg(props) {
-  const { img, mod, ...imgProps } = props;
-  const classes = className("cpn-movie-img", mod && "cpn-movie-img---${mod}");
-  return <img className={classes} src={img} {...imgProps} />;
+  const { img, size, ...imgProps } = props;
+  const classes = className("cpn-movie-img", size && "cpn-movie-img---${size}");
+  return <img className={classes} {...imgProps} src={img} />;
 }

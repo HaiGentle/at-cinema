@@ -1,9 +1,8 @@
 .cpn-movie-name {
-    width: 175px;
-    height: 25px;
-    left: 751px;
-    top: 1739px;
-  
+    width: auto;
+    height: auto;
+
+    position: absolute;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
@@ -12,8 +11,15 @@
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 0.9px;
+    line-height: 11px;
   
     color: #B6B6B6;
+
+    @media screen and (min-width: 600px) {
+      .cpn-movie-name {
+        font-size: 1.8px;
+        line-height: 22px;
+      }
   }
+}
