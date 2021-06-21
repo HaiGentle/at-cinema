@@ -1,17 +1,13 @@
 .cpn-btn {
     background: none;
     border: unset;
-    font-size: 14px;
-    height: 14px;
+    font-size: 1.4rem;
 
     cursor: pointer;
     padding: unset;
     font-family: Roboto;
-
     color: white;
-    position: absolute;
-    top: 3px;
-    right: 3px;
+    
     &--play {
         width: auto;
         height: auto;
@@ -28,8 +24,6 @@
 
 @media screen and (min-width: 600px) {
     .cpn-btn {
-        top: 11px;
-        right: 19px;
         font-size: 3.6rem;
         &--play {
             width: auto;

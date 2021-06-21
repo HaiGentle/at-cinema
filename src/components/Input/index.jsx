@@ -9,13 +9,15 @@ export default function Input(props) {
         size && `cpn-input--${size}`,
     )
     return (
-        <span className="wrapper-search">
+        <div className="search">
             <input
                 className={className}
                 onChange={handleOnChange}
                 value={value}
             />
-            {suffix}
-        </span>
+            <div className="search__suffix">
+                {suffix}
+            </div>
+        </div>
     )
 }
