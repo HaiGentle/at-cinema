@@ -1,4 +1,10 @@
 .cpn-movie-img {
     width: 100%;
     height: 100%;
-  }
+    object-fit: full;
+    border: none;
+    &--card-movie {
+      object-fit: cover;
+      border: none;
+    }
+}

@@ -2,7 +2,6 @@
     width: auto;
     height: auto;
 
-    position: absolute;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
@@ -11,15 +10,23 @@
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
-    font-size: 0.9px;
+    font-size: 0.9rem;
     line-height: 11px;
   
     color: #B6B6B6;
+    &--movie-review {
+      font-size: 1.4rem;
+      line-height: 17px;
+    }
+}
 
-    @media screen and (min-width: 600px) {
-      .cpn-movie-name {
-        font-size: 1.8px;
-        line-height: 22px;
-      }
+@media screen and (min-width: 600px) {
+  .cpn-movie-name {
+    font-size: 1.8rem;
+    line-height: 22px;
+    &--movie-review {
+      font-size: 3.6rem;
+      line-height: 44px;
+    }
   }
 }
