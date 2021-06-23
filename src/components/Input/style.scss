@@ -1,0 +1,41 @@
+.search {
+    display: inline-block;
+    position: relative;
+    .cpn-input {
+        width: 0px;
+        font-size: 1.3rem;
+        color: #ffffff70;
+        border-radius: 4px;
+
+        border: unset;
+        outline: unset;
+        padding: 3px 0;
+
+        background-color: #c4c4c440;
+        transition: width 500ms;
+        font-family: Inter;
+        &--mobile-extend {
+            width: 181px;
+            padding: 3px 21px 3px 7px;
+        }
+    }
+    &__suffix {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .search {
+        .cpn-input {
+            width: 475px;
+            font-size: 3.6rem;
+            padding: 8px 74px 8px 19px;
+            border-radius: 8px;
+        }
+        &__suffix {
+            top: 11px;
+            right: 19px;
+        }
+    }
+}

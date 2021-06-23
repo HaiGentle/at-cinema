@@ -1,0 +1,14 @@
+.cpn-logo {
+    display: inline-block;
+    width: 65px;
+    height: 14px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+    .cpn-logo {
+        width: 225px;
+        height: 48px;
+    }
+}
