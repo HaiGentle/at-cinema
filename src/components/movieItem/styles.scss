@@ -1,21 +1,6 @@
 .cpn-movie-item {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 171px;
-    img {
-        border-radius: 5px 5px 0px 0px;
-    }
-    div {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 22px;
-
-        color: #B6B6B6;
-    }
-    p {
+    width: 100%;
+    .years {
         font-family: Inter;
         font-style: normal;
         font-weight: normal;
@@ -23,35 +8,14 @@
         line-height: 6px;
 
         color: #828282;
-        margin-top: 0;
     }
 }
 
 @media screen and (min-width: 600px) {
     .cpn-movie-item {
-        width: 193px;
-        height: 355px;
-        img {
-            border-radius: 5px 5px 0px 0px;
-        }
-        div {
-            font-family: Inter;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 1.8rem;
-            line-height: 22px;
-
-            color: #B6B6B6;
-        }
-        p {
-            font-family: Inter;
-            font-style: normal;
-            font-weight: normal;
+        .years {
             font-size: 1.2rem;
             line-height: 15px;
-
-            color: #828282;
-
         }
     }
 }
