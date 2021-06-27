@@ -1,10 +1,11 @@
 import './App.scss';
-import Footer from './containers/footer';
+import Content from './containers/content';
 
 function App() {
   return (
     <div className="app">
-      <Footer />
+      AT CINEMA
+      <Content />
     </div>
   );
 }

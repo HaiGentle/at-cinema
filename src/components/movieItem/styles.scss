@@ -1,0 +1,21 @@
+.cpn-movie-item {
+    width: 100%;
+    .years {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.8rem;
+        line-height: 6px;
+
+        color: #828282;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .cpn-movie-item {
+        .years {
+            font-size: 1.2rem;
+            line-height: 15px;
+        }
+    }
+}
