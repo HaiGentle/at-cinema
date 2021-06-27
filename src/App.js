@@ -1,10 +1,10 @@
 import './App.scss';
-import Footer from './containers/footer';
+import Slide from './components/slide';
 
 function App() {
   return (
     <div className="app">
-      <Footer />
+      <Slide />
     </div>
   );
 }
