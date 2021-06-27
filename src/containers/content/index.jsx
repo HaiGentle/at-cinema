@@ -1,6 +1,7 @@
 import React from 'react'
 import "./styles.scss"
 import MovieItem from '../../components/movieItem'
+import Title from '../../components/title/index'
 import wandavission from '../../assets/image/wandavission.jpg'
 
 
@@ -16,11 +17,14 @@ const data = [
     {id: "09", alt: "cruella", name: "Cruella",  img: wandavission, years: 2021 },
     {id: "10", alt: "mortalkombat", name: "Mortal Kombat",  img: wandavission, years: 2021 },
 ]
-export default function Content() {
+export default function Content(props) {
+    const {title} = props;
     return(
         <div className="ctn-content">
             <div className="ctn-content-movie">
-                <h1>Trending Movies</h1>
+                <Title 
+                    title={title}
+                />
                 <div className="ctn-content-movie-item">
                     {data.map(item => (
                         <MovieItem
@@ -32,20 +36,6 @@ export default function Content() {
                         />
                     ))}
                 </div>
-            </div>
-            <div className="ctn-content-tvs">
-                <h1>Trending Tvs</h1>
-                {/* <div className="ctn-content-movie-item">
-                    {data.map(item => (
-                        <MovieItem
-                            id={item.id}
-                            img={item.img}
-                            alt={item.alt}
-                            name={item.name}
-                            years={item.years}
-                        />
-                    ))}
-                </div> */}
             </div>
         </div>
     )
