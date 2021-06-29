@@ -1,11 +1,10 @@
 import './App.scss';
-import Content from './containers/content';
+import Home from './pages/home';
 
 function App() {
   return (
     <div className="app">
-      AT CINEMA
-      <Content />
+      <Home />
     </div>
   );
 }
