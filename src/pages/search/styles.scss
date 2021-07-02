@@ -1,0 +1,14 @@
+.page-search {
+    background-color: #050E12;
+    .section-content {
+        padding: 16px 16px 50px 16px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .page-search {
+        .section-content {
+            padding: 50px 30px 150px;
+        }
+    }
+}
