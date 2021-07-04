@@ -22,29 +22,15 @@ export default function Content(props) {
     return(
         <div className="ctn-content">
             <div className="ctn-content-movie">
-                <Title 
-                    title="Trendding Movie"
-                />
-                <div className="ctn-content-movie-item">
-                    {data.map(item => (
-                        <MovieItem
-                            id={item.id}
-                            img={item.img}
-                            alt={item.alt}
-                            name={item.name}
-                            years={item.years}
-                        />
-                    ))}
+                <div className="ctn-content-title">
+                    <Title 
+                        title={title}
+                    />
                 </div>
-            </div>
-            <div className="ctn-content-movie">
-                <Title 
-                    title="Trendding TV"
-                />
                 <div className="ctn-content-movie-item">
                     {data.map(item => (
                         <MovieItem
-                            id={item.id}
+                            key={item.id}
                             img={item.img}
                             alt={item.alt}
                             name={item.name}
