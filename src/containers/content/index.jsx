@@ -22,9 +22,11 @@ export default function Content(props) {
     return(
         <div className="ctn-content">
             <div className="ctn-content-movie">
-                <Title 
-                    title={title}
-                />
+                <div className="ctn-content-title">
+                    <Title 
+                        title={title}
+                    />
+                </div>
                 <div className="ctn-content-movie-item">
                     {data.map(item => (
                         <MovieItem
