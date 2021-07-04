@@ -13,11 +13,13 @@ export default function Content(props) {
         <div className="ctn-content">
             {data.map(item => (
                 <div className="ctn-content-movie" key={item.title}>
-                    <Title
-                        title={item.title}
-                    />
+                    <div className="ctn-content-movie__title">
+                        <Title
+                            title={item.title}
+                        />
+                    </div>
                     <div
-                        className="ctn-content-movie-item"
+                        className="ctn-content-movie__item"
                         data-aos="fade-right"
                     >
                         {item.value.map(value => (
