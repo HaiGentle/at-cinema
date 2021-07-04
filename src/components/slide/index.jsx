@@ -8,9 +8,9 @@ export default function Slide(props) {
         <div className="cpn-slide">
             <img className="cpn-slide__img" src={img} alt="abc" />
             <div className="cpn-slide__wrapper-text">
-                <div className="cpn-slide__name">Spaces Swippers asgdja asgda ahsgdh agdhha agshd hgash</div>
+                <div className="cpn-slide__name">This is name of the Movie - Film</div>
                 <div className="cpn-slide__content">
-                    <MovieContent content="ajhdajdd" />
+                    <MovieContent content="This is Content of Movie - Film" />
                 </div>
                 <div className="cpn-slide__year">
                     2021

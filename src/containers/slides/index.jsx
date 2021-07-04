@@ -12,6 +12,7 @@ import "./styles.scss";
 
 // import Swiper core and required modules
 import SwiperCore, {
+    EffectCoverflow,
     Navigation,
     Pagination,
     Mousewheel,
@@ -19,13 +20,27 @@ import SwiperCore, {
 } from "swiper/core";
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Mousewheel, Autoplay]);
+SwiperCore.use([EffectCoverflow, Navigation, Pagination, Mousewheel, Autoplay]);
 
 export default function Slides(props) {
     const { data } = props;
     return (
         <div className="ctn-slides">
             <Swiper
+                style={{
+                    "--swiper-theme-color": "white"
+                }}
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true
+                }}
                 navigation={true}
                 pagination={{
                     clickable: true
