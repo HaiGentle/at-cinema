@@ -5,8 +5,8 @@ import Search from './pages/search';
 function App() {
   return (
     <div className="app">
-      <Home />
-      {/* <Search /> */}
+      {/* <Home /> */}
+      <Search />
     </div>
   );
 }
