@@ -8,7 +8,7 @@ export default function Footer(props) {
         <footer className="ctn-footer">
             <Logo logo={logo} />
             <div className="author">
-                powered by tmdb
+                powered by <ins>tmdb</ins> 
             </div>
         </footer>
     )
