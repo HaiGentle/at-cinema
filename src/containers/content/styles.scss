@@ -9,10 +9,8 @@
       width: auto;
       height: max-content;
       grid-template-columns: 32% 32% 32%;
-      grid-template-rows: auto auto auto;
-      column-gap: 2%;
-      row-gap: 20px;
-      justify-content: center;
+      row-gap: 11px;
+      justify-content: space-between;
     }
   }
 }
@@ -29,10 +27,7 @@
         width: auto;
         height: max-content;
         grid-template-columns: 15% 15% 15% 15% 15% 15%;
-        grid-template-rows: auto auto auto;
-        column-gap: 2%;
-        row-gap: 5px;
-        justify-content: center;
+        row-gap: 35px;
       }
     }
   }
