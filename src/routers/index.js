@@ -1,5 +1,6 @@
 // import * as PATHS from './routes';
 import HomePage from '../pages/home';
+import SearchPage from '../pages/search'
 
 const routersMap = [
     {
@@ -9,7 +10,7 @@ const routersMap = [
     },
     {
         path: '/search/:id',
-        component: HomePage,
+        component: SearchPage,
         exact: true,
     }
 ];
