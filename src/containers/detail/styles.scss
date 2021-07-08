@@ -1,12 +1,6 @@
 .ctn-detail {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    right: 10%;
     &-avatar {
-        width: 55px;
+        width: 300px;
         height: 80px;
     }
     &-review {
@@ -29,15 +23,9 @@
 
 @media screen and (min-width: 600px) {
     .ctn-detail {
-        top: 47%;
-        left: 15%;
-        right: 15%;
         &-avatar {
             width: 200px;
             height: 300px;
-            top: 430px;
-            left: 200px;
-            border-radius: 0px 0px 0px 0px;
         }
         &-review {
             position: absolute;

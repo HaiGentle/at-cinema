@@ -22,9 +22,12 @@ export default function Detail() {
             <ContainerDetail 
                 data={data}
             />
-            <Footer />
+            <div className="pages-detail-footer">
+                <Footer />
+            </div>
         </div>
     )
 }
 //fix img
 //footer
+//button

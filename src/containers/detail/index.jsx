@@ -11,41 +11,37 @@ export default function ContainerDetail(props) {
     const { data } = props;
     return(
         <div className='ctn-detail'>
-            {data.map(item => (
-                <div key={item.id}>
-                    <div className="ctn-detail-avatar">
+                    {/* <div className="ctn-detail-avatar">
                         <MovieImg 
-                            img={item.img}
+                            img={data[0].img}
                             size="avatar"
                         />
                     </div>
                     <div className="ctn-detail-review">
                         <MovieName 
-                            name={item.name}
+                            name={data[0].name}
                             size="detail"
                         />
                         <div className="ctn-detail-review-name">
                             <Rate 
-                                rate={item.rate}
+                                rate={data[0].rate}
                             />
                             <div className="ctn-detail-review-name-button">
                                 <Button 
                                     mode="play"
-                                    btn={item.btn}
+                                    btn={data[0].btn}
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="ctn-detail-overview">
                         <Title
-                            title={item.title}
+                            title={data[0].title}
                         />
                         <MovieContent 
-                            content={item.content}
+                            content={data[0].content}
                         />
                     </div>
-                </div>
-            ))}
         </div>
     )
 }
