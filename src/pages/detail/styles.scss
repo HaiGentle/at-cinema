@@ -1,4 +1,7 @@
-.page-detail {
+.pages-detail {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
     &-cover-img {
         width: 100%;
         height: 150px;
@@ -8,7 +11,7 @@
 }
 
 @media screen and (min-width:600px) {
-    .page-detail {
+    .pages-detail {
         &-cover-img {
             height: 500px;
         }
