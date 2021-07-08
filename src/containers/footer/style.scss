@@ -1,6 +1,6 @@
 .ctn-footer {
     height: 58px;
-    margin-left: 2%;
+    padding-left: 13px;
     .author {
         position: relative;
         width: fit-content;
@@ -13,7 +13,6 @@
 @media screen and (min-width: 600px) {
     .ctn-footer {
         height: 256px;
-        margin-left: 5%;
         .author {
             left: 20px;
             font-size: 2.4rem;
