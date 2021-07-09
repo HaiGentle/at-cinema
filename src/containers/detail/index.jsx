@@ -11,7 +11,7 @@ export default function ContainerDetail(props) {
     const { data } = props;
     return(
         <div className='ctn-detail'>
-                    {/* <div className="ctn-detail-avatar">
+                    <div className="ctn-detail-avatar">
                         <MovieImg 
                             img={data[0].img}
                             size="avatar"
@@ -29,11 +29,10 @@ export default function ContainerDetail(props) {
                             <div className="ctn-detail-review-name-button">
                                 <Button 
                                     mode="play"
-                                    btn={data[0].btn}
-                                />
+                                >{data[0].btn}</Button>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                     <div className="ctn-detail-overview">
                         <Title
                             title={data[0].title}

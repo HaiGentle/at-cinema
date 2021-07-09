@@ -19,15 +19,15 @@ export default function Detail() {
                 src={wandavission}
                 alt='coverimage'
             />
-            <ContainerDetail 
-                data={data}
-            />
+            <div className="pages-detail-data">
+                <ContainerDetail 
+                    data={data}
+                />
+            </div>
             <div className="pages-detail-footer">
                 <Footer />
             </div>
         </div>
     )
 }
-//fix img
 //footer
-//button
