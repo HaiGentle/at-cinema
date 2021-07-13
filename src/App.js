@@ -10,6 +10,11 @@ import routersMap from './routers';
 function App() {
   return (
     <div className="app">
+      {
+        /**
+         TODO: Thêm heading và footer cho toàn App
+         */
+      }
       <Router>
         <Switch>
           {
