@@ -10,7 +10,11 @@ const routersMap = [
         exact: true,
     },
     {
-        path: '/search/:id',
+        /**
+         TODO: format của url của 1 page search ta sẽ không sử dụng params, mà sử dụng query-string.
+         @link https://reactrouter.com/web/example/query-parameters
+         */
+        path: '/search',
         component: SearchPage,
         exact: true,
     },

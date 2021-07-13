@@ -8,6 +8,10 @@ export default function Input(props) {
         "cpn-input",
         size && `cpn-input--${size}`,
     )
+
+    /**
+     TODO: Sửa lại cấu trúc, tên của class (cpn-input phải là cấp cao nhất)
+     */
     return (
         <div className="search">
             <input

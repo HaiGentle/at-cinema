@@ -1,16 +1,9 @@
 import React from "react";
 import Slide from "../../components/slide";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
-
 import "./styles.scss";
 
-// import Swiper core and required modules
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import SwiperCore, {
     EffectCoverflow,
     Navigation,
@@ -19,17 +12,24 @@ import SwiperCore, {
     Autoplay
 } from "swiper/core";
 
-// install Swiper modules
 SwiperCore.use([EffectCoverflow, Navigation, Pagination, Mousewheel, Autoplay]);
 
 export default function Slides(props) {
     const { data } = props;
     return (
         <div className="ctn-slides">
+            {
+                /**
+                 TODO: Đặt slide mặt định là thằng thứ 2 
+                 */
+            }
             <Swiper
                 style={{
                     "--swiper-theme-color": "white"
                 }}
+                /**
+                 TODO: Xem lại cách đặt tên tối giản đối với một số trường hợp
+                */
                 effect={"coverflow"}
                 grabCursor={true}
                 centeredSlides={true}

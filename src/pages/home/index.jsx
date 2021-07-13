@@ -41,7 +41,16 @@ export default function Home() {
     return (
         <div className="page-home">
             <Header />
+            { /**
+              TODO: đứng ở page truyền data của slide vào cho container
+             */}
             <Slides />
+            {/**
+             TODO: Xoá container Content, thay vào đó là container ListMovieSection sao cho thoải mãn có sử dựng ntn:
+                <ListMovieSection data={[]} title="Results"/>
+                <ListMovieSection data={[]} title="Trading TV"/>
+             ```
+             */}
             <Content data={data} />
             <Footer />
         </div>

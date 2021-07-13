@@ -3,6 +3,9 @@ import './styles.scss'
 import MovieContent from '../movieContent'
 import img from '../../assets/image/wandavission.png'
 
+/**
+ TODO: Sửa lại tên cho rõ nghĩa: MovíeSlide
+ */
 export default function Slide(props) {
     return (
         <div className="cpn-slide">

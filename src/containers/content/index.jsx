@@ -3,8 +3,7 @@ import "./styles.scss"
 import MovieItem from '../../components/movieItem'
 import Title from '../../components/title/index'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+
 AOS.init();
 
 export default function Content(props) {
@@ -18,6 +17,11 @@ export default function Content(props) {
                             title={item.title}
                         />
                     </div>
+                    {
+                        /**
+                         TODO: Chỉ cho animation on scroll effect lần đầu.
+                         */
+                    }
                     <div
                         className="ctn-content-movie__item"
                         data-aos="fade-right"

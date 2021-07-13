@@ -1,9 +1,15 @@
+/*
+  TODO: di chuyển tất cả vào file App.scss
+*/
+
 *{
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
