@@ -14,9 +14,6 @@ export default function Header(props) {
             <Input
                 suffix={
                     <Button>
-                        {/**
-                         TODO: Sửa lại style, icon đang bị lệch dưới + Chỉnh size nhỏ lại
-                         */}
                         <FontAwesomeIcon icon={faSearch} />
                     </Button>
                 }
