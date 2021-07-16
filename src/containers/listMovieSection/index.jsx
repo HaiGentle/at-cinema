@@ -1,7 +1,14 @@
 import React from 'react'
-import './styles.scss'
-import Slides from '../../containers/slides'
-import ListMovieSeciton from '../../containers/listMovieSection'
+import "./styles.scss"
+import MovieItem from '../../components/movieItem'
+import Heading from '../../components/heading/index'
+import AOS from 'aos';
+import wandavission from '../../assets/image/wandavission.png';
+
+
+AOS.init({
+    once: true
+});
 
 const data = {
     "status": "OK",
@@ -34,15 +41,33 @@ const data = {
     ]
   }
 
-export default function Home() {
+export default function ListMovieSection(props) {
+    const { data } = props;
     return (
-        <div className="page-home">
-            { /**
-              TODO: đứng ở page truyền data của slide vào cho container
-             */}
-            <Slides />
-            <ListMovieSeciton data={data} heading="Results"/>
-            <ListMovieSeciton data={data} heading="Trading TV"/>
+        <div className="ctn-content">
+            {/* {data.map(item => ( */}
+                <div className="ctn-content-movie" key={data.title}>
+                    <div className="ctn-content-movie__title">
+                        <Heading
+                            heading="Results"
+                        />
+                    </div>
+                    <div
+                        className="ctn-content-movie__item"
+                        data-aos="fade-right"
+                    >
+                        {/* {data.value.map(value => ( */}
+                            <MovieItem
+                                key={data.id}
+                                img={wandavission}
+                                alt={data.alt}
+                                name="Hello"
+                                years="2021"
+                            />
+                        {/* ))} */}
+                    </div>
+                </div>
+            {/* ))} */}
         </div>
     )
 }

@@ -1,11 +1,7 @@
 import React from 'react'
 import './styles.scss'
-import wandavission from '../../assets/image/wandavission.jpg'
-import Content from '../../containers/content'
+import ListMovieSection from '../../containers/listMovieSection'
 
-/**
- * Sửa lại format data chỉ bao gồm 1 mảng info movie.
- */
 const data = {
     "status": "OK",
     "copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
@@ -41,7 +37,7 @@ export default function Search() {
     return (
         <div className="page-search">
             <div className="secsion-content">
-                <Content data={data} />
+                <ListMovieSection data={data} />
             </div>
         </div>
     )
