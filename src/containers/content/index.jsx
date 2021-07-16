@@ -4,7 +4,9 @@ import MovieItem from '../../components/movieItem'
 import Heading from '../../components/heading/index'
 import AOS from 'aos';
 
-AOS.init();
+AOS.init({
+    once: true
+});
 
 export default function Content(props) {
     const { data } = props;
@@ -14,14 +16,9 @@ export default function Content(props) {
                 <div className="ctn-content-movie" key={item.title}>
                     <div className="ctn-content-movie__title">
                         <Heading
-                            title={item.title}
+                            heading={item.title}
                         />
                     </div>
-                    {
-                        /**
-                         TODO: Chỉ cho animation on scroll effect lần đầu.
-                         */
-                    }
                     <div
                         className="ctn-content-movie__item"
                         data-aos="fade-right"

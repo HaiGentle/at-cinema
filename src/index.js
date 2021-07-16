@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-/*
-  TODO: Sửa lại format đóng/mở thẻ cho đúng
-*/
-ReactDOM.render( <
-  App / > ,
+ReactDOM.render( 
+  <App /> ,
   document.getElementById('root')
 );
 

@@ -3,8 +3,7 @@ import './style.scss'
 import logo from '../../assets/image/logo.png'
 import Logo from '../../components/logo'
 
-export default function Footer(props) {
-
+export default function Footer() {
     return (
         <footer className="ctn-footer">
             <Logo logo={logo} />

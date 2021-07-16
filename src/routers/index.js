@@ -1,26 +1,22 @@
-// import * as PATHS from './routes';
+import * as PATHS from './routers'
 import HomePage from '../pages/home';
 import SearchPage from '../pages/search'
-import DetailPgae from '../pages/detail';
+import DetailPage from '../pages/detail';
 
 const routersMap = [
     {
-        path: '/',
+        path: PATHS.HomePage,
         component: HomePage,
         exact: true,
     },
     {
-        /**
-         TODO: format của url của 1 page search ta sẽ không sử dụng params, mà sử dụng query-string.
-         @link https://reactrouter.com/web/example/query-parameters
-         */
-        path: '/search',
+        path: PATHS.SearchPage,
         component: SearchPage,
         exact: true,
     },
     {
-        path: '/detail/:id',
-        component: DetailPgae,
+        path: PATHS.DetailPage,
+        component: DetailPage,
         exact: true,
     }
 ];

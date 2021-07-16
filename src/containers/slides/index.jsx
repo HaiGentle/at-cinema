@@ -18,22 +18,14 @@ export default function Slides(props) {
     const { data } = props;
     return (
         <div className="ctn-slides">
-            {
-                /**
-                 TODO: Đặt slide mặt định là thằng thứ 2 
-                 */
-            }
             <Swiper
                 style={{
                     "--swiper-theme-color": "white"
                 }}
-                /**
-                 TODO: Xem lại cách đặt tên tối giản đối với một số trường hợp
-                */
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
+                effect="coverflow"
+                grabCursor
+                centeredSlides
+                slidesPerView="auto"
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
@@ -41,7 +33,8 @@ export default function Slides(props) {
                     modifier: 1,
                     slideShadows: true
                 }}
-                navigation={true}
+                loop
+                navigation
                 pagination={{
                     clickable: true
                 }}

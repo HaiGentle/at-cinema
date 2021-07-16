@@ -1,1 +1,11 @@
-export const HOME_PAGE = '/';
+const HomePage = '/',
+SearchPage = '/search',
+DetailPage = '/detail';
+
+
+
+export {
+    HomePage,
+    SearchPage,
+    DetailPage
+}

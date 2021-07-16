@@ -1,17 +1,18 @@
 import React from 'react'
 import './style.scss'
-import className from 'classnames';
+import classNames from 'classnames';
 
 export default function Heading(props) {
-    const { title, size, uppercase } = props;
-    const classes = className(
-        "cpn-heading", 
-        size && `cpn-heading--${size}`,
-        uppercase && `cpn-heading--${uppercase}`,
-      );
+    const { heading, size, uppercase } = props;
+
+    const classnames = classNames(
+        "cpn-heading",
+        size && `cpn-heading--${size}`
+    )
+
     return (
-        <div className="">
-            {title}
+        <div className={classnames}>
+            {uppercase? heading.toUpperCase() : heading}
         </div>
     )
 }

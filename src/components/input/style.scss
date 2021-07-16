@@ -1,8 +1,7 @@
-.search {
-    display: inline-block;
-    position: relative;
-
-    .cpn-input {
+.cpn-input {
+    display: flex;
+    align-items: center;
+    &__string {
         width: 0px;
         font-size: 1.3rem;
         color: #ffffff70;
@@ -15,30 +14,27 @@
         background-color: #c4c4c440;
         transition: width 500ms;
         font-family: Inter;
+
         &--mobile-extend {
             width: 181px;
             padding: 3px 21px 3px 7px;
         }
     }
-
     &__suffix {
-        position: absolute;
-        top: 3px;
-        right: 3px;
+        margin: 0 5px 0 -18px;
     }
 }
 
 @media screen and (min-width: 600px) {
-    .search {
-        .cpn-input {
+    .cpn-input {
+        &__string {
             width: 475px;
-            font-size: 3.6rem;
-            padding: 8px 74px 8px 19px;
+            font-size: 2.6rem;
+            padding: 8px 70px 8px 19px;
             border-radius: 8px;
         }
         &__suffix {
-            top: 11px;
-            right: 19px;
+            margin: 0 25px 0 -50px;
         }
     }
 }

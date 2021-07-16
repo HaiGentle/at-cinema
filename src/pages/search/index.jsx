@@ -1,45 +1,48 @@
 import React from 'react'
 import './styles.scss'
 import wandavission from '../../assets/image/wandavission.jpg'
-import Header from '../../containers/header'
 import Content from '../../containers/content'
-import Footer from '../../containers/footer'
 
 /**
  * Sửa lại format data chỉ bao gồm 1 mảng info movie.
  */
-const data = [
-    {
-        title: "Results",
-        value:
-            [
-                { id: "01", alt: "wandavission", name: "WandaVission", img: wandavission, years: 2021 },
-                { id: "02", alt: "ironman", name: "Iron Man", img: wandavission, years: 2021 },
-                { id: "03", alt: "oneday", name: "One Day", img: wandavission, years: 2021 },
-                { id: "04", alt: "cruella", name: "Cruella", img: wandavission, years: 2021 },
-                { id: "05", alt: "mortalkombat", name: "Mortal Kombat", img: wandavission, years: 2021 },
-                { id: "06", alt: "wandavission", name: "WandaVission", img: wandavission, years: 2021 },
-                { id: "07", alt: "ironman", name: "Iron Man", img: wandavission, years: 2021 },
-                { id: "08", alt: "oneday", name: "One Day", img: wandavission, years: 2021 },
-                { id: "09", alt: "cruella", name: "Cruella", img: wandavission, years: 2021 },
-                { id: "10", alt: "mortalkombat", name: "Mortal Kombat", img: wandavission, years: 2021 }
-            ]
-    },
-]
+const data = {
+    "status": "OK",
+    "copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
+    "has_more": true,
+    "num_results": 20,
+    "results": [
+        {
+            "display_title": "DOMINO: Battle of the Bones",
+            "mpaa_rating": "R",
+            "critics_pick": 0,
+            "byline": "Teo Bugbee",
+            "headline": "‘Domino: Battle of the Bones’ Review: Juicing Up the Game",
+            "summary_short": "This comedy tries to turn the humble pastime of dominoes into an action-packed championship sport.",
+            "publication_date": "2021-06-10",
+            "opening_date": "2021-06-11",
+            "date_updated": "2021-06-10 11:02:03",
+            "link": {
+                "type": "article",
+                "url": "https://www.nytimes.com/2021/06/10/movies/domino-battle-of-the-bones-review.html",
+                "suggested_link_text": "Read the New York Times Review of DOMINO: Battle of the Bones"
+            },
+            "multimedia": {
+                "type": "mediumThreeByTwo210",
+                "src": "https://static01.nyt.com/images/2021/06/11/arts/10domino/10domino-mediumThreeByTwo440.jpg",
+                "height": 140,
+                "width": 210
+            }
+        },
+    ]
+}
 
 export default function Search() {
     return (
         <div className="page-search">
-            <Header />
             <div className="secsion-content">
-                {
-                    /**
-                     * Thay bằng container ListMovieSection
-                     */
-                }
                 <Content data={data} />
             </div>
-            <Footer />
         </div>
     )
 }
