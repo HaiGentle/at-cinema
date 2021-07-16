@@ -4,6 +4,7 @@ import MovieContent from '../movieContent'
 import img from '../../assets/image/wandavission.png'
 
 export default function MovieSlide(props) {
+    // const {img, name, content, year} = props;
     return (
         <div className="cpn-movie-slide">
             <img className="cpn-movie-slide__img" src={img} alt="abc" />

@@ -20,4 +20,19 @@ code {
 .app {
     min-height: 100vh;
     background-color: #000;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        min-height: calc(100vh - 80px);
+    }
+}
+
+@media screen and(min-width: 600px) {
+    .app {
+        .wrapper {
+            min-height: calc(100vh - 53.2px);
+        }
+    }
 }
