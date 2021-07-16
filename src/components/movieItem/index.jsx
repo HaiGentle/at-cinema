@@ -11,13 +11,13 @@ import className from "classnames";
 export default function MovieItem(props) {
   const { img, alt, name, years, size, mod, ...imgProps } = props;
   const classes = className(
-    "cpn-movie-name", 
-    size && `cpn-movie-name--${size}`,
+    "name", 
+    size && `name--${size}`,
   );
 
   const classImg = className(
-    "cpn-movie-img", 
-    mod && `cpn-movie-img--${mod}`,
+    "img", 
+    mod && `img--${mod}`,
   );
   return (
     <div className="cpn-movie-item">
