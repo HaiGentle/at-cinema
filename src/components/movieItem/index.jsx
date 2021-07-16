@@ -4,6 +4,9 @@ import className from "classnames";
 
 /**
  TODO: Di chuyển MovieImg và MovieName vào inline trong component này
+ TODO: thẻ img và name chung classes => chug className
+ TODO: em đã thêm bộ data trên api vào pages/search, a copy
+ bộ data đó về, rồi làm theo cấu trúc data đó
  */
 export default function MovieItem(props) {
   const { img, alt, name, years, size, ...imgProps } = props;
