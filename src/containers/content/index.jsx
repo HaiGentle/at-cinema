@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles.scss"
 import MovieItem from '../../components/movieItem'
-import Heading from '../../components/title/index'
+import Heading from '../../components/heading/index'
 import AOS from 'aos';
 
 AOS.init({

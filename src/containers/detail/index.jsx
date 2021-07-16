@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import MovieImg from '../../components/movieImg';
-import Title from '../../components/title';
+import Heading from '../../components/heading';
 import MovieName from '../../components/movieName';
 import Rate from '../../components/rate';
 import Button from '../../components/button';
@@ -38,8 +38,8 @@ export default function ContainerDetail(props) {
                 </div>
             </div>
             <div className="ctn-detail-overview">
-                <Title
-                    title={data[0].title}
+                <Heading
+                    heading={data[0].title}
                 />
                 <MovieContent
                     content={data[0].content}
