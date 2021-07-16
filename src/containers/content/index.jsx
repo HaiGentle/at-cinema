@@ -12,7 +12,7 @@ export default function Content(props) {
     const { data } = props;
     return (
         <div className="ctn-content">
-            {data.map(item => (
+            {/* {data.map(item => (
                 <div className="ctn-content-movie" key={item.title}>
                     <div className="ctn-content-movie__title">
                         <Heading
@@ -34,7 +34,7 @@ export default function Content(props) {
                         ))}
                     </div>
                 </div>
-            ))}
+            ))} */}
         </div>
     )
 }
