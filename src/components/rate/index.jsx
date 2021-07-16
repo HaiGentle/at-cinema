@@ -7,11 +7,6 @@ export default function Rate(props) {
   const { rate } = props;
   return (
     <div className="cpn-rate" >
-      {
-        /**
-         TODO: Làm ơn cho cái ngôi sao màu vàng !!!
-         */
-      }
       <FontAwesomeIcon icon={faStar} className="cpn-rate-icon" />
       {rate}
     </div>

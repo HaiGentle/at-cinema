@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles.scss';
-import Header from '../../containers/header';
-import ContainerDetail from '../../containers/detail';
-import Footer from '../../containers/footer'
+import MovieItem from '../../components/movieItem';
+import Heading from '../../components/heading';
+import Rate from '../../components/rate';
+import Button from '../../components/button';
+import MovieContent from '../../components/movieContent';
 import wandavission from '../../assets/image/wandavission.jpg'
 
 /**
@@ -12,7 +14,7 @@ const data = [
     {
         id: "01",
         img: wandavission,
-        name: "WandaVission dwqdwdqwdwddwqad fwefefe ẹhwjk qfkqfhk qjqhlc ",
+        name: "WandaVission",
         rate: "7.0",
         btn: "Play Trailer",
         title: "Overview",
@@ -23,24 +25,44 @@ const data = [
 
 export default function Detail() {
     return (
-        <div className="pages-detail">
-            <Header />
-            <img className="pages-detail-cover-img"
+        <div className="detail">
+            <img className="detail-cover-img"
                 src={wandavission}
                 alt='coverimage'
             />
-            <div className="pages-detail-data">
-                {
-                    /**
-                     TODO: Viết inline trong page, không cần tách ra 1 container Detail.
-                     */
-                }
-                <ContainerDetail
-                    data={data}
-                />
-            </div>
-            <div className="pages-detail-footer">
-                <Footer />
+            <div className="detail-data">
+                <div className='infor'>
+                    <div className="avatar">
+                        <MovieItem
+                            img={data[0].img}
+                            size="avatar"
+                        />
+                    </div>
+                    <div className="review">
+                        <MovieItem
+                            name={data[0].name}
+                            size="detail"
+                        />
+                    <div className="name">
+                        <Rate
+                            rate={data[0].rate}
+                        />
+                    <div className="name-button">
+                        <Button
+                            mode="play"
+                        >{data[0].btn}</Button>
+                    </div>
+                </div>
+                </div>
+                    <div className="overview">
+                        <Heading
+                            title={data[0].title}
+                        />
+                        <MovieContent
+                            content={data[0].content}
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     )

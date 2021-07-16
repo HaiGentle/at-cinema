@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles.scss"
 import MovieItem from '../../components/movieItem'
-import Title from '../../components/title/index'
+import Heading from '../../components/heading/index'
 import AOS from 'aos';
 
 AOS.init();
@@ -13,7 +13,7 @@ export default function Content(props) {
             {data.map(item => (
                 <div className="ctn-content-movie" key={item.title}>
                     <div className="ctn-content-movie__title">
-                        <Title
+                        <Heading
                             title={item.title}
                         />
                     </div>
