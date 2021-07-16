@@ -1,6 +1,36 @@
 .cpn-movie-item {
     width: 100%;
     height: auto;
+    .img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px 4px 0px 0px;
+        &--avatar {
+          border-radius: 0px 0px 0px 0px;
+        }
+    }
+    .name {
+        width: auto;
+        height: auto;
+    
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        border: none;
+      
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 11px;
+      
+        color: #B6B6B6;
+        &--detail {
+          font-size: 1.4rem;
+          line-height: 17px;
+          white-space: pre-wrap;
+        }
+    }
     .years {
         font-family: Inter;
         font-style: normal;
@@ -14,9 +44,30 @@
 
 @media screen and (min-width: 600px) {
     .cpn-movie-item {
+        .img {
+            width: 100%;
+            border-radius: 6px 6px 0px 0px;
+            
+            &--avatar {
+              border-radius: 0px 0px 0px 0px;
+            }
+        }
+        .name {
+            font-size: 1.8rem;
+            line-height: 22px;
+            color: #ffffff;
+            width: auto;
+            &--detail {
+              font-size: 3.6rem;
+              line-height: 44px;
+            }
+        }
+
         .years {
             font-size: 1.2rem;
             line-height: 15px;
+            color: #ffffff;
         }
     }
 }
+    

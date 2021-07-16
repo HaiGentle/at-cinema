@@ -3,15 +3,6 @@
     font-weight: bold;
     color: #fff;
     font-family: Inter;
-    &--sm {
-        font-size: small;
-    }
-    &--md {
-        font-size: medium;
-    }
-    &--lg {
-        font-size: large;
-    }
 }
 
 @media screen and (min-width: 600px) {
@@ -19,14 +10,5 @@
         font-size: 4rem;
         font-weight: 700;
         color: #fff;
-        &--sm {
-            font-size: 3rem;
-        }
-        &--md {
-            font-size: 3.6rem;
-        }
-        &--lg {
-            font-size: 4.3rem;
-        }
     }
 }

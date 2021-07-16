@@ -1,0 +1,448 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
+  "has_more": true,
+  "num_results": 20,
+  "results": [
+    {
+      "display_title": "DOMINO: Battle of the Bones",
+      "mpaa_rating": "R",
+      "critics_pick": 0,
+      "byline": "Teo Bugbee",
+      "headline": "‘Domino: Battle of the Bones’ Review: Juicing Up the Game",
+      "summary_short": "This comedy tries to turn the humble pastime of dominoes into an action-packed championship sport.",
+      "publication_date": "2021-06-10",
+      "opening_date": "2021-06-11",
+      "date_updated": "2021-06-10 11:02:03",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2021/06/10/movies/domino-battle-of-the-bones-review.html",
+        "suggested_link_text": "Read the New York Times Review of DOMINO: Battle of the Bones"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2021/06/11/arts/10domino/10domino-mediumThreeByTwo440.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Night of the Kings",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "Nicolas Rapold",
+      "headline": "‘Night of the Kings’ Review: Telling Tales to a Captive Audience",
+      "summary_short": "Ancient tradition fuses with modern struggles in a prison in Ivory Coast.",
+      "publication_date": "2020-12-29",
+      "opening_date": null,
+      "date_updated": "2020-12-29 18:12:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2020/12/29/movies/night-of-the-kings-review.html",
+        "suggested_link_text": "Read the New York Times Review of Night of the Kings"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2021/01/01/arts/29nightofthekings1/29nightofthekings1-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "A Dog Called Money",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "Glenn Kenny",
+      "headline": "‘A Dog Called Money’ Review: Lyrical Encounters With PJ Harvey",
+      "summary_short": "In this documentary, the musician PJ Harvey travels to Kabul, Kosovo and Washington, D.C. to find inspiration.",
+      "publication_date": "2020-12-09",
+      "opening_date": "2020-12-09",
+      "date_updated": "2020-12-09 12:04:04",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2020/12/09/movies/a-dog-called-money-review.html",
+        "suggested_link_text": "Read the New York Times Review of A Dog Called Money"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2020/12/07/arts/pjharvey1/pjharvey1-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Space Dogs",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "Teo Bugbee",
+      "headline": "‘Space Dogs’ Review: No Dogs Go to Heaven",
+      "summary_short": "This documentary uses the lives and legends of Moscow’s street dogs to present a brutal vision of humanity and nature.",
+      "publication_date": "2020-09-10",
+      "opening_date": "2020-09-11",
+      "date_updated": "2020-09-10 11:04:05",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2020/09/10/movies/space-dogs-review.html",
+        "suggested_link_text": "Read the New York Times Review of Space Dogs"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2020/09/10/arts/10spacedogs-art2/10spacedogs-art2-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "The Dog Doc",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "Teo Bugbee",
+      "headline": "‘The Dog Doc’ Review: How Puppies Heal (and Heel)",
+      "summary_short": "In this documentary, the animal patients at one veterinary clinic are treated with a standard of care that might make a person jealous.",
+      "publication_date": "2020-03-12",
+      "opening_date": null,
+      "date_updated": "2020-03-19 02:44:01",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2020/03/12/movies/the-dog-doc-review.html",
+        "suggested_link_text": "Read the New York Times Review of The Dog Doc"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2020/03/12/arts/12thedogdoc/12thedogdoc-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "A Dog's Journey",
+      "mpaa_rating": "PG",
+      "critics_pick": 0,
+      "byline": "GLENN KENNY",
+      "headline": "‘A Dog’s Journey’ Review: Good Boys (and Girls) on a Mission",
+      "summary_short": "This sentimentality-steeped film is a feel-good tale with a sad side.",
+      "publication_date": "2019-05-16",
+      "opening_date": "2019-05-17",
+      "date_updated": "2019-06-07 16:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2019/05/16/movies/a-dogs-journey-review.html",
+        "suggested_link_text": "Read the New York Times Review of A Dog's Journey"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2019/05/17/arts/16dogsjourney1/dogsjourney1-mediumThreeByTwo210-v2.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Dogman",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "MANOHLA DARGIS",
+      "headline": "‘Dogman’ Review: In Italy, a Man-Eat-Man World",
+      "summary_short": "In the latest from the Italian director Matteo Garrone (“Gomorrah”), a bullied dog groomer bites back.",
+      "publication_date": "2019-04-11",
+      "opening_date": "2019-04-12",
+      "date_updated": "2019-05-08 16:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2019/04/11/movies/dogman-review.html",
+        "suggested_link_text": "Read the New York Times Review of Dogman"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2019/04/10/arts/00dogman-1/00dogman-1-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "The Beach Bum",
+      "mpaa_rating": "R",
+      "critics_pick": 0,
+      "byline": "A.O. SCOTT",
+      "headline": "Review: Matthew McConaughey Waxes Poetic in ‘The Beach Bum’",
+      "summary_short": "The McConaissance collapses into decadence in Harmony Korine’s latest caper.",
+      "publication_date": "2019-03-27",
+      "opening_date": "2019-03-29",
+      "date_updated": "2019-04-27 16:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2019/03/27/movies/the-beach-bum-review.html",
+        "suggested_link_text": "Read the New York Times Review of The Beach Bum"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2019/03/29/arts/27beachbum/27beachbum-mediumThreeByTwo210-v3.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "The Wild Pear Tree",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "A.O. SCOTT",
+      "headline": "‘The Wild Pear Tree’ Review: A Gambler and a Writer at Odds",
+      "summary_short": "Modern Turkey is the backdrop for a father-son story rich with literary overtones and philosophical implications.",
+      "publication_date": "2019-01-29",
+      "opening_date": "2019-01-30",
+      "date_updated": "2019-02-14 17:44:01",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2019/01/29/movies/the-wild-pear-tree-review.html",
+        "suggested_link_text": "Read the New York Times Review of The Wild Pear Tree"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2019/01/30/arts/30wildpear1/30wildpear1-mediumThreeByTwo210-v2.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "A Dog's Way Home",
+      "mpaa_rating": "PG",
+      "critics_pick": 0,
+      "byline": "GLENN KENNY",
+      "headline": "‘A Dog’s Way Home’ Review: A Trek to Pull the Heartstrings",
+      "summary_short": "In this film, based on a novel by W. Bruce Cameron, a dog named Bella (with the voice of Bryce Dallas Howard) must make an arduous journey.",
+      "publication_date": "2019-01-10",
+      "opening_date": "2019-01-11",
+      "date_updated": "2019-02-08 17:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2019/01/10/movies/a-dogs-way-home-review.html",
+        "suggested_link_text": "Read the New York Times Review of A Dog's Way Home"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2019/01/11/arts/11dogswayhome/merlin_148779000_4db11bf2-f102-4538-87c8-5b7f149deecf-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Maison du bonheur",
+      "mpaa_rating": "",
+      "critics_pick": 1,
+      "byline": "GLENN KENNY",
+      "headline": "Review: ‘Maison du Bonheur,’ a Beguiling Portrait of a Woman in Paris",
+      "summary_short": "Sofia Bohdanowicz’s documentary captures a way of life through the observations of a delightful woman who has occupied the same apartment for 50 years.",
+      "publication_date": "2018-08-23",
+      "opening_date": null,
+      "date_updated": "2018-08-31 16:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2018/08/23/movies/maison-du-bonheur-review.html",
+        "suggested_link_text": "Read the New York Times Review of Maison du bonheur"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2018/08/24/arts/24maison/merlin_142506297_1b35d654-cee7-4b2b-bb46-4a695be42887-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Dog Days",
+      "mpaa_rating": "PG",
+      "critics_pick": 0,
+      "byline": "GLENN KENNY",
+      "headline": "Review: In ‘Dog Days,’ Finding Each Other Through Canine Fandom",
+      "summary_short": "In Ken Marino’s comedy, a love of dogs brings people together.",
+      "publication_date": "2018-08-09",
+      "opening_date": "2018-08-08",
+      "date_updated": "2018-08-29 16:44:01",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2018/08/09/movies/dog-days-review.html",
+        "suggested_link_text": "Read the New York Times Review of Dog Days"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2018/08/07/arts/dogdays2/dogdays2-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Show Dogs",
+      "mpaa_rating": "PG",
+      "critics_pick": 0,
+      "byline": "TEO BUGBEE",
+      "headline": "Review: ‘Show Dogs’ Is a Shaggy Good Time",
+      "summary_short": "In Raja Gosnell’s canine comedy, a Rottweiler teams up with a human crime-fighting partner to thwart an international animal smuggling ring.",
+      "publication_date": "2018-05-17",
+      "opening_date": "2018-05-18",
+      "date_updated": "2018-06-08 16:44:01",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2018/05/17/movies/show-dogs-review-will-arnett-ludacris-rupaul.html",
+        "suggested_link_text": "Read the New York Times Review of Show Dogs"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2018/05/16/arts/showdogs-image1/showdogs-image1-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Pope Francis: A Man of His Word",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "GLENN KENNY",
+      "headline": "Review: In ‘Pope Francis: A Man of His Word,’ a Religious Leader Speaks at Length",
+      "summary_short": "The head of the Roman Catholic Church answers questions in this feature from Wim Wenders.",
+      "publication_date": "2018-05-17",
+      "opening_date": "2018-05-18",
+      "date_updated": "2018-06-01 16:44:01",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2018/05/17/movies/pope-francis-a-man-of-his-word-review.html",
+        "suggested_link_text": "Read the New York Times Review of Pope Francis: A Man of His Word"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2018/05/18/arts/18popefrancis1/popefrancis1-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Beauty and the Dogs",
+      "mpaa_rating": "",
+      "critics_pick": 1,
+      "byline": "JEANNETTE CATSOULIS",
+      "headline": "Review: Seeking Justice After a Rape in ‘Beauty and the Dogs’",
+      "summary_short": "In this film inspired by a true story, the director Kaouther Ben Hania leans hard on official corruption and a bureaucracy dominated by male power.",
+      "publication_date": "2018-03-22",
+      "opening_date": null,
+      "date_updated": "2018-04-22 16:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2018/03/22/movies/beauty-and-the-dogs-review.html",
+        "suggested_link_text": "Read the New York Times Review of Beauty and the Dogs"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2018/03/23/arts/23beautyandthedogspix/23beautyandthedogspix-mediumThreeByTwo210-v2.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Isle of Dogs",
+      "mpaa_rating": "PG-13",
+      "critics_pick": 1,
+      "byline": "MANOHLA DARGIS",
+      "headline": "Review: Wes Anderson’s Bleakly Beautiful ‘Isle of Dogs’",
+      "summary_short": "Set in a fantasy Japan, Mr. Anderson’s new movie tells a heroic story of abandoned dogs, voiced by Bill Murray, Liev Schreiber and others.",
+      "publication_date": "2018-03-22",
+      "opening_date": "2018-03-23",
+      "date_updated": "2018-04-22 16:44:02",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2018/03/22/movies/isle-of-dogs-review-wes-anderson.html",
+        "suggested_link_text": "Read the New York Times Review of Isle of Dogs"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2018/03/23/arts/23isleofdogs4/23isleofdogs4-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Sled Dogs",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "HELEN T. VERONGOS",
+      "headline": "Review: ‘Sled Dogs’ Exposes Abuse of Working Animals",
+      "summary_short": "The documentary filmmaker Fern Levitt wants to shut down the dog-sledding industry. She makes a moving argument.",
+      "publication_date": "2017-07-27",
+      "opening_date": "2017-07-28",
+      "date_updated": "2017-11-02 04:18:28",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2017/07/27/movies/sled-dogs-review.html",
+        "suggested_link_text": "Read the New York Times Review of Sled Dogs"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2017/07/28/arts/28SLEDDOGS/28SLEDDOGS-mediumThreeByTwo210-v2.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Rock Dog",
+      "mpaa_rating": "PG",
+      "critics_pick": 0,
+      "byline": "NEIL GENZLINGER",
+      "headline": "Review: Guard the Sheep? He’d Rather Be a ‘Rock Dog’",
+      "summary_short": "An animated movie for children is elevated by a fine vocal performance from Eddie Izzard.",
+      "publication_date": "2017-02-23",
+      "opening_date": "2017-02-24",
+      "date_updated": "2017-11-02 04:18:26",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2017/02/23/movies/rock-dog-review.html",
+        "suggested_link_text": "Read the New York Times Review of Rock Dog"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2017/02/24/arts/24ROCKDOGSTAR/24ROCKDOGSTAR-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "A Dog’s Purpose",
+      "mpaa_rating": "PG",
+      "critics_pick": 0,
+      "byline": "NEIL GENZLINGER",
+      "headline": "Review: ‘A Dog’s Purpose,’ With Many Lives and Many Clichés",
+      "summary_short": "This film, opening amid a call for a PETA boycott, is a string of hero-dog fantasies and observations from the canine point of view.",
+      "publication_date": "2017-01-25",
+      "opening_date": "2017-01-27",
+      "date_updated": "2017-11-02 04:18:26",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2017/01/25/movies/a-dogs-purpose-review.html",
+        "suggested_link_text": "Read the New York Times Review of A Dog’s Purpose"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2017/01/27/arts/27DOGSPURPOSE1/27DOGSPURPOSE1-mediumThreeByTwo210-v2.jpg",
+        "height": 140,
+        "width": 210
+      }
+    },
+    {
+      "display_title": "Dog Eat Dog",
+      "mpaa_rating": "",
+      "critics_pick": 0,
+      "byline": "GLENN KENNY",
+      "headline": "Review: ‘Dog Eat Dog’ Is a Pulpy Tale With Nasty, Bumbling Crooks",
+      "summary_short": "Nicolas Cage, Willem Dafoe and Christopher Matthew Cook star in this crime movie about some bad guys with hate in their hearts.",
+      "publication_date": "2016-11-03",
+      "opening_date": null,
+      "date_updated": "2017-11-02 04:16:43",
+      "link": {
+        "type": "article",
+        "url": "https://www.nytimes.com/2016/11/04/movies/dog-eat-dog-review-willem-dafoe-nicolas-cage.html",
+        "suggested_link_text": "Read the New York Times Review of Dog Eat Dog"
+      },
+      "multimedia": {
+        "type": "mediumThreeByTwo210",
+        "src": "https://static01.nyt.com/images/2016/11/04/arts/04DOGEAT1/04DOGEAT1-mediumThreeByTwo210.jpg",
+        "height": 140,
+        "width": 210
+      }
+    }
+  ]
+}
