@@ -44,11 +44,11 @@ export default function Slides(props) {
                 }}
                 className="mySwiper"
             >
-                <SwiperSlide><Slide /></SwiperSlide>
-                <SwiperSlide><Slide /></SwiperSlide>
-                <SwiperSlide><Slide /></SwiperSlide>
-                <SwiperSlide><Slide /></SwiperSlide>
-                <SwiperSlide><Slide /></SwiperSlide>
+                {data?.results?.map(result => (
+                    <SwiperSlide>
+                        <Slide result={result} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     );

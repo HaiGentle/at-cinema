@@ -1,20 +1,23 @@
 import React from 'react'
 import './styles.scss'
 import MovieContent from '../movieContent'
-import img from '../../assets/image/wandavission.png'
 
 export default function MovieSlide(props) {
-    // const {img, name, content, year} = props;
+    const { result } = props;
     return (
         <div className="cpn-movie-slide">
-            <img className="cpn-movie-slide__img" src={img} alt="abc" />
+            <img 
+                className="cpn-movie-slide__img" 
+                src={result?.multimedia?.src} 
+                alt={result?.display_title} 
+            />
             <div className="cpn-movie-slide__wrapper-text">
-                <div className="name">This is name of the Movie - Film</div>
+                <div className="name">{result?.display_title}</div>
                 <div className="content">
-                    <MovieContent content="This is Content of Movie - Film" />
+                    <MovieContent content={result?.summary_short} />
                 </div>
                 <div className="year">
-                    2021
+                    {result?.publication_date}
                 </div>
             </div>
         </div>
