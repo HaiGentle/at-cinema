@@ -6,22 +6,21 @@ import ListMovieSection from '../../containers/listMovieSection'
 export default function Search() {
     const [state, setState] = useState();
 
-    useEffect(() => {
-        axios.get("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=romantic&api-key=4Y9yhHvP3FCNqDuOysLMKLq7RESYAlge")
+    useEffect( () => {
+        axios.get("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=Home&api-key=4Y9yhHvP3FCNqDuOysLMKLq7RESYAlge")
             .then((response) => {
                 const { data } = response;
-                setState(() => data);
+                setState(data);
             })
             .catch((error) => {
                 console.log({ error });
             })
-
-    }, [])
-
+    },[])
+    console.log(state);
     return (
         <div className="page-search">
             <div className="secsion-content">
-                <ListMovieSection data={state} />
+                <ListMovieSection data={state} heading="Results" />
             </div>
         </div>
     )

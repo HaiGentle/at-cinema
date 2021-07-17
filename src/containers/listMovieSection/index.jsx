@@ -23,13 +23,13 @@ export default function ListMovieSection(props) {
                     className="ctn-content-movie__item"
                     data-aos="fade-right"
                 >
-                    {data.results.map(results => (
+                    {data?.results?.map(results => (
                         <MovieItem
-                            key={results.link.url}
-                            img={results.multimedia.src}
-                            alt={results.display_title}
-                            name={results.display_title}
-                            years={results.publication_date}
+                            key={results?.link?.url}
+                            img={results?.multimedia?.src}
+                            alt={results?.display_title}
+                            name={results?.display_title}
+                            years={results?.publication_date}
                         />
                     ))}
                 </div>
