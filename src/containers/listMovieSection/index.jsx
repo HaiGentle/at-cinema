@@ -4,13 +4,13 @@ import MovieItem from '../../components/movieItem'
 import Heading from '../../components/heading/index'
 import AOS from 'aos';
 
-
 AOS.init({
     once: true
 });
 
 export default function ListMovieSection(props) {
     const { data, heading } = props;
+    
     return (
         <div className="ctn-content">
             <div className="ctn-content-movie">

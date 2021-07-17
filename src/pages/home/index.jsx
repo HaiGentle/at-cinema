@@ -8,7 +8,8 @@ import axios from 'axios'
 export default function Home() {
     const [state, setState] = useState({
         dataHome: dataHome,
-        dataSlides: {}
+        dataSlides: {},
+        loading: true
     });
 
     useEffect(() => {
@@ -16,7 +17,11 @@ export default function Home() {
             .then((response) => {
                 const { data } = response;
                 setState((prevState) => (
-                    {...prevState, dataSlides: data}
+                    {
+                        ...prevState,
+                        dataSlides: data,
+                        loading: false
+                    }
                 ));
             })
             .catch((error) => {
@@ -24,11 +29,17 @@ export default function Home() {
             })
     }, [])
 
+    if (state.loading) {
+        return (
+            <h1 style={{ color: "while" }}>Loading ...</h1>
+        )
+    }
+
     return (
         <div className="page-home">
             <Slides data={state.dataSlides} />
-            <ListMovieSection data={state.dataHome} heading="Results"/>
-            <ListMovieSection data={state.dataHome} heading="Trending TV"/>
+            <ListMovieSection data={state.dataHome} heading="Results" />
+            <ListMovieSection data={state.dataHome} heading="Trending TV" />
         </div>
     )
 }

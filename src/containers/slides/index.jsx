@@ -43,9 +43,9 @@ export default function Slides(props) {
                     disableOnInteraction: false
                 }}
                 className="mySwiper"
-            >
+            >  
                 {data?.results?.map(result => (
-                    <SwiperSlide>
+                    <SwiperSlide key={result?.link.url}>
                         <Slide result={result} />
                     </SwiperSlide>
                 ))}
