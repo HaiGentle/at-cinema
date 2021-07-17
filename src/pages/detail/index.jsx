@@ -16,18 +16,10 @@ export default function Detail() {
             />
             <div className="detail-data">
                 <div className='infor'>
-                    <div className="avatar">
-                        <MovieItem
-                            img={data.results[0].multimedia.src}
-                            mod="avatar"
-                        />
-                    </div>
+                    <img className="avatar" src={data.results[0].multimedia.src} alt=""/>
                     <div className="movie">
                         <div className="name">
-                            <MovieItem
-                                name={data.results[0].display_title}
-                                size="detail"
-                            />
+                            {data.results[0].display_title}
                         </div>
                         <div className="trailer">
                             <div className="rate">
