@@ -1,38 +1,60 @@
 .detail {
     background-color: #000;
-    min-height: calc(100vh - 300px);
+    height: auto;
     &-cover-img {
         width: 100%;
         height: 150px;
         object-fit: cover;
     }
     &-data {
-        margin-bottom: 50px;
-        &.infor {
-            margin-top: -75px;
-            margin-left: 30px;
-            margin-right: 30px;
-            
-            &.avatar {
-                width: 100px;
-                height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        .infor {    
+            margin-top: -30px;
+            height: auto;
+            z-index: 1;
+            .avatar {
+                width: 80px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 0px 0px 0px 0px;
             }
-            &.review {
-                margin-top: 80px;
-                width: auto;
-                &.name {
+            .movie {
+                .name {
+                    width: auto;
+                    height: auto;
+                    margin-top: 10px;
+                    
+                    // white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis; 
+                    border: none;
+                      
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: bold;
+                  
+                    color: #B6B6B6;
+                    font-size: 1.4rem;
+                    line-height: 17px;
+                    white-space: pre-wrap;
+                }
+                .trailer {
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
-                    margin-top: 5px;
-                    &-button {
+                    .rate {
+                        display: flex;
+                        margin-top: 5px;
+                    }
+                    .button {
                         margin-left: 12px;
                     } 
-                }
+                } 
             }
-            &.overview {
-                margin-top: 8px;
-            }
+        }
+        .overview {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -43,22 +65,40 @@
             height: 500px;
         }
         &-data {
-            &.infor {
+            margin-right: 100px;
+            margin-left: 100px;
+            .infor {
                 margin-top: -150px;
-                margin-left: 100px;
-                margin-right: 100px;
                 z-index: 1;
-                &.avatar {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                .avatar {
                     width: 200px;
                     height: 300px;
+                    object-fit: cover;
+                    border-radius: 0px 0px 0px 0px;
                 }
-                &.review {
-                    margin-top: -100px;
-                    margin-left: 270px;
-                }
-                &.overview {
-                    margin-top: 30px;
-                }
+                .movie {
+                    margin-left: 50px;
+                    .name {
+                        color: #ffffff;
+                        width: auto;
+                        font-size: 3.6rem;
+                        line-height: 44px;
+                        margin-top: 0;
+                        padding-bottom: 20px;
+                    }
+                    .trailer {
+                        .button {
+                            margin-left: 20px;
+                        }
+                    }  
+                } 
+            }
+            .overview {
+                margin-top: 50px;
+                margin-bottom: 50px;
             }
         }
     }
