@@ -38,10 +38,10 @@ export default function Slides(props) {
                 pagination={{
                     clickable: true
                 }}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false
-                }}
+                // autoplay={{
+                //     delay: 3000,
+                //     disableOnInteraction: false
+                // }}
                 className="mySwiper"
             >  
                 {data?.results?.map(result => (
