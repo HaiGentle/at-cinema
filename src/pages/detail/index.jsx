@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.scss';
-import MovieItem from '../../components/movieItem';
 import Heading from '../../components/heading';
 import Rate from '../../components/rate';
 import Button from '../../components/button';
