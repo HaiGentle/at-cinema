@@ -3,7 +3,7 @@ import './style.scss'
 import classNames from 'classnames';
 
 export default function Input(props) {
-    const { size, suffix, ...inputProps } = props;
+    const { size, suffix, searchRef, ...inputProps } = props;
     const className = classNames(
         "cpn-input__string",
         size && `cpn-input__string--${size}`,
@@ -14,6 +14,7 @@ export default function Input(props) {
             <input
                 className={className}
                 {...inputProps}
+                ref={searchRef}
             />
             <div className="cpn-input__suffix">
                 {suffix}

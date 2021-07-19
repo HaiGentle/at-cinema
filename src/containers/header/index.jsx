@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './style.scss'
 import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,21 +10,37 @@ import Input from '../../components/input'
 import Button from '../../components/button'
 
 export default function Header() {
-    let history = useHistory();
-  
-    function handleClickBackHome() {
+    const searchRef = useRef("");
+    const history = useHistory();
+
+    const handleClickBackHome = () => {
         history.push('');
     }
-    
+    const handleClickButtonSearch = () => {
+        searchRef.current.value && history.push(`/search?name=${searchRef.current.value}`);
+    }
+    const handleOnchange = (e) => {
+        e.preventDefault();
+    }
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleClickButtonSearch();
+        }
+    }
+
     return (
         <div className="ctn-header">
             <Logo logo={logo} onClick={handleClickBackHome} />
             <Input
                 suffix={
-                    <Button>
+                    <Button onClick={handleClickButtonSearch}>
                         <FontAwesomeIcon icon={faSearch} />
                     </Button>
                 }
+                onChange={(e) => handleOnchange(e)}
+                searchRef={searchRef}
+                onKeyPress={(e) => handleKeyPress(e)}
             />
         </div>
     )

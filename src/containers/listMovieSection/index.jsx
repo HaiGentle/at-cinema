@@ -18,14 +18,17 @@ export default function ListMovieSection(props) {
                     <Heading
                         heading={heading}
                     />
+                    <Heading
+                        heading={!data?.results && "Not found..!"}
+                    />
                 </div>
                 <div
                     className="ctn-content-movie__item"
                     data-aos="fade-right"
                 >
-                    {data?.results?.map(results => (
+                    {data?.results?.map((results, i) => (
                         <MovieItem
-                            key={results?.link?.url}
+                            key={i}
                             img={results?.multimedia?.src}
                             alt={results?.display_title}
                             name={results?.display_title}
