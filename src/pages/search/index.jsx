@@ -48,16 +48,14 @@ export default function Search() {
             axios.get(path)
                 .then((response) => {
                     const { data } = response;
-                    const { has_more, results } = data;
+                    let { has_more, results } = data;
                     let currentDataSearch = { ...state.dataSearch };
-                    currentDataSearch.has_more = has_more;
-                    let newDataSearch = currentDataSearch;
-                    newDataSearch.results = currentDataSearch.results.concat(results);
+                    results = currentDataSearch.results.concat(results);
 
-                    setState({
-                        dataSearch: newDataSearch,
+                    setState(prev => ({
+                        dataSearch: {...prev.dataSearch, has_more, results},
                         loading: false
-                    });
+                    }));
                 })
                 .catch((error) => {
                     console.log({ error });
