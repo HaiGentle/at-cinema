@@ -1,7 +1,19 @@
 .page-search {
     background-color: #000000;
     padding: 0 16px 50px;
-    .wrapper-heading {
+    .wrapper-loading {
+        width: fit-content;
+        margin: auto;
+        cursor: unset;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .wrapper-load-more {
         width: fit-content;
         margin: auto;
         cursor: pointer;

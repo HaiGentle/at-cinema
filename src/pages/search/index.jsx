@@ -68,17 +68,24 @@ export default function Search() {
     return (
         <div className="page-search">
             <ListMovieSection data={state.dataSearch} heading={"Results: " + queryName} />
-            {<Heading heading={state.loading ? "Loading..." : !state.dataSearch.results && "Not found..!"} />}
-            <div className="wrapper-heading">
-                {
-                    state.dataSearch.has_more && !state.loading &&
-                    <Heading
-                        heading="Load more..."
-                        size="sm"
-                        onClick={handleClickLoadMore}
-                    />
-                }
-            </div>
+            {
+                !state.loading && 
+                !state.dataSearch.results && 
+                <Heading heading="Not found..!" />
+            }   {/*check dataSearch.results after loading */}
+            {
+                state.loading ? <div className="wrapper-loading"> <Heading size="sm" heading="Loading..." /> </div> :
+                <div className="wrapper-load-more">
+                    {
+                        state.dataSearch.has_more &&
+                        <Heading
+                            heading="Load more..."
+                            size="sm"
+                            onClick={handleClickLoadMore}
+                        />
+                    }
+                </div>
+            }
         </div>
     )
 }
