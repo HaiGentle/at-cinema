@@ -39,8 +39,10 @@ export default function Home() {
     return (
         <div className="page-home">
             <Slides data={state.dataSlides} />
-            <ListMovieSection data={state.dataHome} heading="Results" />
-            <ListMovieSection data={state.dataHome} heading="Trending TV" />
+            <div className="wrapper">
+                <ListMovieSection data={state.dataHome} heading="Results" />
+                <ListMovieSection data={state.dataHome} heading="Trending TV" />
+            </div>
         </div>
     )
 }

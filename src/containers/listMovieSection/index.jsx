@@ -18,9 +18,6 @@ export default function ListMovieSection(props) {
                     <Heading
                         heading={heading}
                     />
-                    <Heading
-                        heading={!data?.results && "Not found..!"}
-                    />
                 </div>
                 <div
                     className="ctn-content-movie__item"

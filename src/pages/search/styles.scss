@@ -1,3 +1,25 @@
 .page-search {
     background-color: #000000;
+    padding: 0 16px 50px;
+    .wrapper-heading {
+        width: fit-content;
+        margin: auto;
+        cursor: pointer;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        :active {
+            color: #a3a2a2;
+        }
+    }
+}
+
+@media screen and(min-width: 600px) {
+    .page-search {
+        padding: 0 30px 150px;
+    }
 }
