@@ -24,7 +24,7 @@
         font-size: 0.9rem;
         line-height: 11px;
       
-        color: #B6B6B6;
+        color: white;
         &--detail {
           font-size: 1.4rem;
           line-height: 17px;
@@ -38,7 +38,7 @@
         font-size: 0.8rem;
         line-height: 6px;
 
-        color: #828282;
+        color: white;
     }
 }
 
@@ -57,7 +57,6 @@
         .name {
             font-size: 1.8rem;
             line-height: 22px;
-            color: #ffffff;
             width: auto;
             &--detail {
               font-size: 3.6rem;
@@ -68,7 +67,6 @@
         .years {
             font-size: 1.2rem;
             line-height: 15px;
-            color: #ffffff;
         }
     }
 }

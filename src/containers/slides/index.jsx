@@ -1,7 +1,6 @@
 import React from "react";
 import Slide from "../../components/slide";
 import "./styles.scss";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SwiperCore, {

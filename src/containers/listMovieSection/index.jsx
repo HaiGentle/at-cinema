@@ -10,7 +10,6 @@ AOS.init({
 
 export default function ListMovieSection(props) {
     const { data, heading } = props;
-    
     return (
         <div className="ctn-content">
             <div className="ctn-content-movie">
@@ -24,7 +23,7 @@ export default function ListMovieSection(props) {
                     data-aos="fade-right"
                 >
                     {data?.results?.map(results => (
-                        <MovieItem
+                        <MovieItem 
                             key={results?.link?.url}
                             img={results?.multimedia?.src}
                             alt={results?.display_title}
