@@ -2,7 +2,7 @@ import React from 'react'
 import './style.scss'
 
 export default function Logo(props) {
-    const { logo } = props;
+    const { logo, ...extendProps } = props;
 
     return (
         <div
@@ -10,6 +10,7 @@ export default function Logo(props) {
             style={{
                 backgroundImage: `url(${logo})`
             }}
+            {...extendProps}
         />
     )
 }

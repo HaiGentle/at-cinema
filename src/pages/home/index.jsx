@@ -1,9 +1,10 @@
 import './styles.scss'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
 import Slides from '../../containers/slides'
 import ListMovieSection from '../../containers/listMovieSection'
 import dataHome from '../../assets/data/api_at_cinema.json'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
 
 export default function Home() {
     const [state, setState] = useState({
@@ -38,8 +39,10 @@ export default function Home() {
     return (
         <div className="page-home">
             <Slides data={state.dataSlides} />
-            <ListMovieSection data={state.dataHome} heading="Results" />
-            <ListMovieSection data={state.dataHome} heading="Trending TV" />
+            <div className="wrapper">
+                <ListMovieSection data={state.dataHome} heading="Results" />
+                <ListMovieSection data={state.dataHome} heading="Trending TV" />
+            </div>
         </div>
     )
 }

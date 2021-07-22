@@ -11,26 +11,26 @@ import Footer from './containers/footer'
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <div className="wrapper">
-        <Router>
-          <Switch>
-            {
-              routersMap.map(routerConfig => (
-                <Route
-                  key={routerConfig.path}
-                  exact={routerConfig.exact}
-                  path={routerConfig.path}
-                  component={routerConfig.component}
-                />
-              ))
-            }
-          </Switch>
-        </Router>
-        <Footer />
+    <Router>
+      <div className="app">
+        <Header />
+        <div className="wrapper">
+            <Switch>
+              {
+                routersMap.map(routerConfig => (
+                  <Route
+                    key={routerConfig.path}
+                    exact={routerConfig.exact}
+                    path={routerConfig.path}
+                    component={routerConfig.component}
+                  />
+                ))
+              }
+            </Switch>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

@@ -1,5 +1,5 @@
 .ctn-content {
-  padding: 0 16px 50px;
+  padding-bottom: 30px;
   &-movie {
     &__title {
       padding: 18px 0;
@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 600px) {
   .ctn-content {
-    padding: 0 30px 150px;
+    padding-bottom: 50px;
     &-movie {
       &__title {
         padding: 50px 0;

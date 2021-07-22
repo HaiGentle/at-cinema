@@ -1,0 +1,13 @@
+.page-home {
+    .wrapper {
+        padding: 0 16px 50px;
+    }
+}
+
+@media screen and(min-width: 600px) {
+    .page-home {
+        .wrapper {
+            padding: 0 30px 150px;
+        }
+    }
+}

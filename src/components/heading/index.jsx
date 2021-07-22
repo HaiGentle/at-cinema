@@ -3,7 +3,7 @@ import './style.scss'
 import classNames from 'classnames';
 
 export default function Heading(props) {
-    const { heading, size, uppercase } = props;
+    const { heading, size, uppercase, ...extendProps } = props;
 
     const classnames = classNames(
         "cpn-heading",
@@ -11,7 +11,7 @@ export default function Heading(props) {
     )
 
     return (
-        <div className={classnames}>
+        <div className={classnames} {...extendProps}>
             {uppercase? heading.toUpperCase() : heading}
         </div>
     )
