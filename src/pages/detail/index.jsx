@@ -9,7 +9,6 @@ import axios from 'axios';
 
 export default function Detail() {
     let {movieID} = useParams();
-    console.log(movieID);
     const [state, setState] = useState({
         dataDetail: {},
         loading: true
@@ -29,6 +28,7 @@ export default function Detail() {
         .catch((error) => {
             console.log(error);
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     if(state.loading) {
         return(
@@ -37,7 +37,6 @@ export default function Detail() {
     }
     return (
         <div className="detail">
-            {console.log(state.dataDetail)}
             <img className="detail-cover-img"
                 src={state.dataDetail.results[0].multimedia.src}
                 alt='coverimage'
