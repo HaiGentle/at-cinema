@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.scss";
-import className from "classnames";
 import { Link } from "react-router-dom";
 
 
