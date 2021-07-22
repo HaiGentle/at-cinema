@@ -77,7 +77,7 @@ export default function Search() {
                     {
                         state.dataSearch.has_more &&
                         <Heading
-                            heading="Load more..."
+                            heading="Load more"
                             size="sm"
                             onClick={handleClickLoadMore}
                         />

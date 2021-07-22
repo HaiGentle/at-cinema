@@ -4,7 +4,7 @@ import Heading from '../../components/heading';
 import Rate from '../../components/rate';
 import Button from '../../components/button';
 import MovieContent from '../../components/movieContent';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Detail() {
@@ -56,10 +56,11 @@ export default function Detail() {
                                 />
                             </div>
                             <div className="button">
-                                <Button
-                                    link={state.dataDetail.results[0].link.url}
-                                    mode="play"
-                                >Play Trailer</Button>
+                                <Link to={{ pathname: state.dataDetail.results[0].link.url }} target="_blank">
+                                    <Button
+                                        mode="play"
+                                    >Play Trailer</Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
