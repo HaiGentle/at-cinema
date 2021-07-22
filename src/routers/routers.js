@@ -1,7 +1,6 @@
 const HomePage = '/',
 SearchPage = '/search',
-DetailPage = '/detail';
-
+DetailPage = '/detail/:movieID';
 
 
 export {

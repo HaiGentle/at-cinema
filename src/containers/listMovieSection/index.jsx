@@ -10,7 +10,6 @@ AOS.init({
 
 export default function ListMovieSection(props) {
     const { data, heading } = props;
-    
     return (
         <div className="ctn-content">
             <div className="ctn-content-movie">

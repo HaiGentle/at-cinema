@@ -5,9 +5,6 @@
         width: 100%;
         object-fit: cover;
         border-radius: 4px 4px 0px 0px;
-        &--avatar {
-          border-radius: 0px 0px 0px 0px;
-        }
     }
     .name {
         width: auto;
@@ -24,12 +21,7 @@
         font-size: 0.9rem;
         line-height: 11px;
       
-        color: #B6B6B6;
-        &--detail {
-          font-size: 1.4rem;
-          line-height: 17px;
-          white-space: pre-wrap;
-        }
+        color: white;
     }
     .years {
         font-family: Inter;
@@ -38,7 +30,7 @@
         font-size: 0.8rem;
         line-height: 6px;
 
-        color: #828282;
+        color: white;
     }
 }
 
@@ -47,28 +39,16 @@
         .img {
             width: 100%;
             border-radius: 6px 6px 0px 0px;
-            
-            &--avatar {
-                width: 200px;
-                height: 300px;
-                border-radius: 0px 0px 0px 0px;
-            }
         }
         .name {
             font-size: 1.8rem;
             line-height: 22px;
-            color: #ffffff;
             width: auto;
-            &--detail {
-              font-size: 3.6rem;
-              line-height: 44px;
-            }
         }
 
         .years {
             font-size: 1.2rem;
             line-height: 15px;
-            color: #ffffff;
         }
     }
 }
