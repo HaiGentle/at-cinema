@@ -1,10 +1,5 @@
-const HomePage = '/',
-SearchPage = '/search',
-DetailPage = '/detail/:movieID';
+const HomePage = "/";
+const SearchPage = "/search";
+const DetailPage = "/detail/:movieID";
 
-
-export {
-    HomePage,
-    SearchPage,
-    DetailPage
-}
+export { HomePage, SearchPage, DetailPage };

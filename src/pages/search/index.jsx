@@ -1,32 +1,43 @@
 import './styles.scss'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useLocation } from "react-router-dom";
 
 import ListMovieSection from '../../containers/listMovieSection'
 import Heading from '../../components/heading';
 
+const searchMovieService = (queryName, offset = 0) => {
+    const path = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?offset=${offset}&query=${queryName}&api-key=4Y9yhHvP3FCNqDuOysLMKLq7RESYAlge`;
+
+    return axios.get(path).then(res => res.data)
+}
+
 export default function Search() {
     const [state, setState] = useState({
-        dataSearch: {},
+        dataSearch: {
+            has_more: false,
+            results: [],
+        },
         loading: false
     });
-    const search = new URLSearchParams(useLocation().search);
-    const queryName = search.get('name')
 
-    const currentOffset = useRef();
+    /**
+     TODO: hint - const { search } = useLocation();
+     */
+    const search = new URLSearchParams(useLocation().search);
+    const queryName = search.get('name');
 
     useEffect(() => {
-        currentOffset.current = 0;
         setState(prev => ({
             ...prev,
             loading: true
         }));
 
-        const path = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?offset=${currentOffset.current * 20}&query=${queryName}&api-key=4Y9yhHvP3FCNqDuOysLMKLq7RESYAlge`;
-        axios.get(path)
-            .then((response) => {
-                const { data } = response;
+        /**
+         TODO: use finally 
+         */
+        searchMovieService(queryName)
+            .then((data) => {
                 setState({
                     dataSearch: data,
                     loading: false
@@ -43,17 +54,19 @@ export default function Search() {
                 ...prev,
                 loading: true
             }));
-            currentOffset.current += 1;
-            const path = `https://api.nytimes.com/svc/movies/v2/reviews/search.json?offset=${currentOffset.current * 20}&query=${queryName}&api-key=4Y9yhHvP3FCNqDuOysLMKLq7RESYAlge`;
-            axios.get(path)
-                .then((response) => {
-                    const { data } = response;
+
+            const currentOffset = Math.floor((state.dataSearch?.results?.length || 0) / 20)
+            /**
+                TODO: use finally 
+            */
+            searchMovieService(queryName, currentOffset)
+                .then((data) => {
                     let { has_more, results } = data;
                     let currentDataSearch = { ...state.dataSearch };
                     results = currentDataSearch.results.concat(results);
 
                     setState(prev => ({
-                        dataSearch: {...prev.dataSearch, has_more, results},
+                        dataSearch: { ...prev.dataSearch, has_more, results },
                         loading: false
                     }));
                 })
@@ -65,24 +78,37 @@ export default function Search() {
 
     return (
         <div className="page-search">
+            {
+                /**
+                 TODO: Use template string
+                 */
+            }
             <ListMovieSection data={state.dataSearch} heading={"Results: " + queryName} />
             {
-                !state.loading && 
-                !state.dataSearch.results && 
-                <Heading heading="Not found..!" />
-            }   {/*check dataSearch.results after loading */}
+                !state.loading &&
+                !state.dataSearch?.results?.length && (
+                    <Heading heading="Not found..!" />
+                )
+            }
             {
-                state.loading ? <div className="wrapper-loading"> <Heading size="sm" heading="Loading..." /> </div> :
-                <div className="wrapper-load-more">
-                    {
-                        state.dataSearch.has_more &&
-                        <Heading
-                            heading="Load more"
-                            size="sm"
-                            onClick={handleClickLoadMore}
-                        />
-                    }
-                </div>
+                state.loading ? (
+                    <div className="wrapper-loading">
+                        <Heading size="sm" heading="Loading..." />
+                    </div>
+                ) : (
+                    <div className="wrapper-load-more">
+                        {
+                            state.dataSearch.has_more &&
+                            (
+                                <Heading
+                                    heading="Load more"
+                                    size="sm"
+                                    onClick={handleClickLoadMore}
+                                />
+                            )
+                        }
+                    </div>
+                )
             }
         </div>
     )

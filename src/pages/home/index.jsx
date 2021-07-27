@@ -4,6 +4,10 @@ import axios from 'axios'
 
 import Slides from '../../containers/slides'
 import ListMovieSection from '../../containers/listMovieSection'
+
+/**
+ TODO: Replace by calling api
+  */
 import dataHome from '../../assets/data/api_at_cinema.json'
 
 export default function Home() {
@@ -17,22 +21,30 @@ export default function Home() {
         axios.get("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=love&api-key=4Y9yhHvP3FCNqDuOysLMKLq7RESYAlge")
             .then((response) => {
                 const { data } = response;
-                setState((prevState) => (
-                    {
-                        ...prevState,
-                        dataSlides: data,
-                        loading: false
-                    }
-                ));
+                setState((prevState) => ({
+                    ...prevState,
+                    dataSlides: data,
+                }));
             })
-            .catch((error) => {
-                console.log({ error });
+            .catch(() => {
+                /*
+                    TODO: Research & implement notification lib (ex: react-tostify)
+                 */
             })
-    }, [])
+            .finally(() => {
+                setState((prevState) => ({
+                    ...prevState,
+                    loading: false,
+                }));
+            })
+    }, []);
 
     if (state.loading) {
+        /**
+         TODO: Create 1 Component Loading
+         */
         return (
-            <h1 style={{ color: "while" }}>Loading ...</h1>
+            <h1 style={{ color: "white" }}>Loading ...</h1>
         )
     }
 
