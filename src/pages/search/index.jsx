@@ -18,33 +18,29 @@ export default function Search() {
             has_more: false,
             results: [],
         },
-        loading: false
+        loading: true
     });
 
-    /**
-     TODO: hint - const { search } = useLocation();
-     */
-    const search = new URLSearchParams(useLocation().search);
+    const location = useLocation();
+    const search = new URLSearchParams(location.search);
     const queryName = search.get('name');
 
     useEffect(() => {
-        setState(prev => ({
-            ...prev,
-            loading: true
-        }));
-
-        /**
-         TODO: use finally 
-         */
         searchMovieService(queryName)
             .then((data) => {
-                setState({
-                    dataSearch: data,
-                    loading: false
-                });
+                setState(prev => ({
+                    ...prev,
+                    dataSearch: data
+                }));
             })
             .catch((error) => {
                 console.log({ error });
+            })
+            .finally(() => {
+                setState(prev => ({
+                    ...prev,
+                    loading: false
+                }))
             })
     }, [queryName])
 
@@ -56,34 +52,32 @@ export default function Search() {
             }));
 
             const currentOffset = Math.floor((state.dataSearch?.results?.length || 0) / 20)
-            /**
-                TODO: use finally 
-            */
-            searchMovieService(queryName, currentOffset)
+            searchMovieService(queryName, currentOffset * 20)
                 .then((data) => {
                     let { has_more, results } = data;
                     let currentDataSearch = { ...state.dataSearch };
                     results = currentDataSearch.results.concat(results);
 
                     setState(prev => ({
-                        dataSearch: { ...prev.dataSearch, has_more, results },
-                        loading: false
+                        ...prev,
+                        dataSearch: { ...prev.dataSearch, has_more, results }
                     }));
                 })
                 .catch((error) => {
                     console.log({ error });
+                })
+                .finally(() => {
+                    setState(prev => ({
+                        ...prev,
+                        loading: false
+                    }))
                 })
         }
     }
 
     return (
         <div className="page-search">
-            {
-                /**
-                 TODO: Use template string
-                 */
-            }
-            <ListMovieSection data={state.dataSearch} heading={"Results: " + queryName} />
+            <ListMovieSection data={state.dataSearch} heading={`Results: ${queryName}`} />
             {
                 !state.loading &&
                 !state.dataSearch?.results?.length && (
