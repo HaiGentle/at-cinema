@@ -1,0 +1,15 @@
+.ctn-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: #1A1F38;
+    padding: 16px;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    .ctn-header {
+        padding: 16px 70px;
+    }
+}

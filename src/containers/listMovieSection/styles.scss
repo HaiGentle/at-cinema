@@ -1,0 +1,34 @@
+.ctn-content {
+  padding-bottom: 30px;
+  &-movie {
+    &__title {
+      padding: 18px 0;
+    }
+    &__item {
+      display: grid;
+      width: auto;
+      height: max-content;
+      grid-template-columns: 32% 32% 32%;
+      row-gap: 11px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ctn-content {
+    padding-bottom: 50px;
+    &-movie {
+      &__title {
+        padding: 50px 0;
+      }
+      &__item {
+        display: grid;
+        width: auto;
+        height: max-content;
+        grid-template-columns: 16% 16% 16% 16% 16% 16%;
+        row-gap: 35px;
+      }
+    }
+  }
+}

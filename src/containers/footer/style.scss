@@ -1,0 +1,22 @@
+.ctn-footer {
+    height: 58px;
+    margin-right: auto;
+    margin-left: auto;
+    .author {
+        position: relative;
+        width: fit-content;
+        left: 5px;
+        color: white;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .ctn-footer {
+        height: 256px;
+        .author {
+            left: 20px;
+            font-size: 2.4rem;
+        }
+    }
+}

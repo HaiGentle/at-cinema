@@ -1,0 +1,35 @@
+.cpn-btn {
+    background: none;
+    border: unset;
+    font-size: 1.4rem;
+
+    cursor: pointer;
+    padding: unset;
+    font-family: Roboto;
+    color: white;
+    
+    &--play {
+        width: auto;
+        height: auto;
+        padding: 3.55px 9.14px;
+        background-color: #FFDA18;
+
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: black;
+        border-radius: 3px;
+        position: static;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .cpn-btn {
+        font-size: 2.6rem;
+        &--play {
+            width: auto;
+            height: auto;
+            padding: 11px 36px;
+            font-size: 2.4rem;
+        }
+    }
+}
